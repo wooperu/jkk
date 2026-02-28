@@ -1,0 +1,139 @@
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #0f0f0f;
+  color: white;
+  padding: 50px 20px;
+  max-width: 1450px;
+  margin: 0 auto;
+}
+
+h3 {
+  margin-top: 0;
+  color: #00f0ff;
+}
+
+ul {
+  list-style-type: square;
+}
+
+ul ul {
+  list-style-type: disc;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+li a {
+  display: inline-block;
+  transition: 0.2s ease;
+}
+
+li a:hover {
+  transform: translateX(6px);
+}
+
+a {
+  text-decoration: none;
+  color: #ff2e63;
+}
+
+a:hover {
+  color: #00f0ff;
+}
+
+.jjk-title img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 0 auto 30px auto;
+  filter: drop-shadow(0 0 15px #ff2e63);
+  transition: 0.3s;
+}
+
+.jjk-title img:hover {
+  filter: drop-shadow(0 0 25px #00f0ff);
+}
+
+.character-section {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 40px;
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.2);
+}
+
+.character-section img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.character-section img:hover {
+  transform: scale(1.05);
+}
+
+#next-btn {
+  background-color: #ff2e63;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#next-btn:hover {
+  background-color: #00f0ff;
+}
+
+.volume-cover img {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.volume-cover img:hover {
+  transform: scale(1.05);
+  box-shadow: 
+    0 0 10px #00f0ff,
+    0 0 20px #00f0ff,
+    0 0 40px rgba(0, 240, 255, 0.6);
+}
+
+.volume {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 10px rgba(255, 46, 99, 0.2);
+}
+
+/* .jjk {
+  color: white;
+  font-size: 80px;
+} */
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  .character-section img {
+    width: 150px;
+  }
+
+  .volume {
+    padding: 15px;
+  }
+}
