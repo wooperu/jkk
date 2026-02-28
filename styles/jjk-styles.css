@@ -7,11 +7,6 @@ body {
   margin: 0 auto;
 }
 
-h3 {
-  margin-top: 0;
-  color: #00f0ff;
-}
-
 ul {
   list-style-type: square;
 }
@@ -33,13 +28,8 @@ li a:hover {
   transform: translateX(6px);
 }
 
-a {
-  text-decoration: none;
-  color: #ff2e63;
-}
-
-a:hover {
-  color: #00f0ff;
+.character-name {
+  color: white;
 }
 
 .jjk-title img {
@@ -122,6 +112,19 @@ a:hover {
   background: #00f0ff
 }
 
+.volume {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 10px rgba(255, 46, 99, 0.2);
+}
+
+.volume-title {
+  margin-top: 0;
+  color: #00f0ff;
+}
+
 .volume-cover img {
   width: 100%;
   max-width: 180px;
@@ -138,25 +141,21 @@ a:hover {
     0 0 40px rgba(0, 240, 255, 0.6);
 }
 
-.volume {
-  background: #1a1a1a;
-  padding: 20px;
-  border-radius: 12px;
-  margin-bottom: 40px;
-  box-shadow: 0 0 10px rgba(255, 46, 99, 0.2);
+.chapter-title {
+  text-decoration: none;
+  color: #ff2e63;
 }
 
-/* .jjk {
-  color: white;
-  font-size: 80px;
-} */
+.chapter-title:hover {
+  color: #00f0ff;
+}
 
 @media (max-width: 600px) {
   h2 {
     font-size: 20px;
   }
 
-  h3 {
+  .volume-title {
     font-size: 16px;
   }
 
