@@ -58,17 +58,33 @@ a:hover {
 
 .character-section {
   background: #1a1a1a;
-  padding: 20px;
+  padding: 25px;
   border-radius: 12px;
   text-align: center;
-  margin-bottom: 40px;
-  box-shadow: 0 0 10px rgba(0, 240, 255, 0.2);
+  margin-bottom: 50px;
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.character-card {
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.character-card.fade-out {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.character-card.fade-in {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .character-section img {
   width: 300px;
   height: auto;
-  border-radius: 10px;
+  border-radius: 12px;
   margin-bottom: 15px;
   transition: transform 0.3s ease;
 }
@@ -77,18 +93,33 @@ a:hover {
   transform: scale(1.05);
 }
 
-#next-btn {
+.controls button {
   background-color: #ff2e63;
   border: none;
   padding: 10px 20px;
   color: white;
   border-radius: 8px;
   cursor: pointer;
-  margin-top: 10px;
+  margin: 10px;
+  transition: 0.2s ease;
 }
 
-#next-btn:hover {
+.controls button:hover {
   background-color: #00f0ff;
+}
+
+.dots span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: gray;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.dots .active {
+  background: #00f0ff
 }
 
 .volume-cover img {

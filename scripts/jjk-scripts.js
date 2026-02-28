@@ -22,11 +22,15 @@ const characters = [
 ];
 
 let currentIndex = 0;
+let autoSlide;
 
 const img = document.getElementById("character-img");
 const characterName = document.getElementById("character-name");
 const desc = document.getElementById("character-desc");
-const button = document.getElementById("next-btn");
+const card = document.getElementById("character-card");
+const nextBtn = document.getElementById("next-btn");
+const prevBtn = document.getElementById("prev-btn");
+const dotsContainer = document.getElementById("dots");
 
 function updateCharacter() {
   const character = characters[currentIndex];
