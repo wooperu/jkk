@@ -8,11 +8,14 @@ body {
 }
 
 ul {
-  list-style-type: square;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 ul ul {
   list-style-type: disc;
+  padding-left: 20px;
 }
 
 li {
@@ -109,10 +112,11 @@ li a:hover {
 }
 
 .dots .active {
-  background: #00f0ff
+  background: #00f0ff;
 }
 
-.volume {
+.volume-card {
+  list-style: none;
   background: #1a1a1a;
   padding: 20px;
   border-radius: 12px;
@@ -120,20 +124,22 @@ li a:hover {
   box-shadow: 0 0 10px rgba(255, 46, 99, 0.2);
 }
 
-.volume-title {
+.volume-card .volume-title {
   margin-top: 0;
   color: #00f0ff;
+  font-size: 18px;
 }
 
-.volume-cover img {
+.volume-card .volume-cover img {
   width: 100%;
   max-width: 180px;
   height: auto;
   border-radius: 8px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 10px 0;
 }
 
-.volume-cover img:hover {
+.volume-card .volume-cover img:hover {
   transform: scale(1.05);
   box-shadow: 
     0 0 10px #00f0ff,
@@ -141,13 +147,21 @@ li a:hover {
     0 0 40px rgba(0, 240, 255, 0.6);
 }
 
-.chapter-title {
-  text-decoration: none;
-  color: #ff2e63;
+.volume-card ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin: 10px 0 0 0;
 }
 
-.chapter-title:hover {
+.volume-card .chapter-title {
+  text-decoration: none;
+  color: #ff2e63;
+  transition: 0.2s ease;
+}
+
+.volume-card .chapter-title:hover {
   color: #00f0ff;
+  transform: translateX(4px);
 }
 
 @media (max-width: 600px) {
@@ -155,7 +169,7 @@ li a:hover {
     font-size: 20px;
   }
 
-  .volume-title {
+  .volume-card .volume-title {
     font-size: 16px;
   }
 
@@ -163,7 +177,11 @@ li a:hover {
     width: 150px;
   }
 
-  .volume {
-    padding: 15px;
+  .volume-card .volume-cover img {
+    max-width: 140px;
+  }
+
+  .volume-card ul {
+    padding-left: 15px;
   }
 }
